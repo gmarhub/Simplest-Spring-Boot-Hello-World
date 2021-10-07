@@ -7,7 +7,7 @@ pipeline {
             agent {
                 docker {
                     image 'maven'
-                    args ' -u root  -v $PWD/Simplest-Spring-Boot-Hello-World:/usr/src/mymaven -w /usr/src/mymaven '
+                    args ' -u root  -v $PWD:/usr/src/mymaven -w /usr/src/mymaven '
                 }
                 
             }
